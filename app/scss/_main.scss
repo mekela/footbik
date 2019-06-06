@@ -1,0 +1,114 @@
+// Normally mainpage styles
+ 
+ /*----------header----------*/
+
+ .header{
+	@include povh('');
+	box-shadow: 12px 11px 50px rgba(0, 0, 0, 0.2);
+	background-color: #ffffff;
+	&__contact{
+		text-align: right;
+		.tel{
+			display: block;
+			text-align: right;
+			color: #5e4f9c;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 20px;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding-bottom: 8px;
+			padding-right: 10px;
+		}
+	}
+ }
+ 	.logo{
+		display: block;
+		max-height: 100px; 
+		img{
+			position: relative;
+			margin-top: -10px;
+		}
+	 }
+	 .menu-trigger{
+		color: #f26723;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 20px;
+		text-transform: uppercase;
+		button{
+			cursor: pointer;
+			color: #f26723;
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 20px;
+			text-transform: uppercase;
+			display: block;
+			i{
+				color: #5e4f9c;
+				padding-right: 7px;
+			}
+		}
+	 }
+	
+/*----------end-header----------*/	
+
+
+/*----------main----------*/
+ 
+ .main{
+	@include povh('');
+ }
+ 	.bnr{
+		 background: url(../img/top-bg.jpg) no-repeat center;
+		 background-size: cover;
+		 padding: 170px 0;
+		 &__title{
+			padding: 25px 0;
+			background-color: rgba(235, 93, 19, 0.7);
+			color: rgba(255,255,255, 1);
+			font-weight: 700;
+			line-height: 65px;
+			text-transform: uppercase;
+			font-size: 46px;
+			letter-spacing: 2.3px;
+			text-align: center;
+		 }
+		 &__subtitle{
+			background-color: rgba(94, 79, 156, 0.7);
+			padding: 21px 0 35px 0;
+			text-align: center;
+			color: #ffffff;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 41px;
+			.button{
+				text-transform: none;
+				font-size: 24px;
+				border-radius: 25px;
+				padding: 5px 10px;
+			}
+		 }
+		 &__button{
+			 margin-top: 55px;
+			 text-align: center;
+			 .button{
+				font-size: 24px;
+				box-shadow: 0 0 40px rgba(235, 93, 19, 0.25);
+				border-radius: 33px;
+				padding: 20px 27px;
+				font-weight: 300;
+			 }
+		 }
+	 }
+
+/*----------end main----------*/	
+
+	
+/*----------footer----------*/
+ 
+ .footer{
+	@include povh('');
+ }
+
+/*----------end footer----------*/
