@@ -29,4 +29,9 @@ $(document).ready(function() {
 		$(this).removeClass( "active" );
 	});
 
+	//fancybox
+	$('.close-modal').click(function(){
+	$.fancybox.close();
+	});
+
 });

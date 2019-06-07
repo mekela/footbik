@@ -47,7 +47,7 @@
       <div class="col-md-4">
         <div class="header__contact">
           <a href="#" class="tel">+38 050 323 67 64</a>
-          <a href="#" class="button">ЗАКАЗАТЬ ЗВОНОК</a>
+          <a  data-fancybox data-src="#modal"  class="button">ЗАКАЗАТЬ ЗВОНОК</a>
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@
       <li><a href="#">Основатель клуба Футбик</a></li>
     </ul>
     <div class="menu__button">
-      <a href="#" class="button">получить бизнес-план</a>
+      <a data-fancybox data-src="#modal"  class="button">получить бизнес-план</a>
     </div>
   </div>
   <div class="menu__overlay"></div>
@@ -543,7 +543,32 @@
 </footer>
 <!--end-footer-->
 </div>
-
+<div class="modal" id="modal">
+  <div class="modal__inner">
+    <div class="close-modal"><i class="fas fa-times"></i></div>
+    <div class="title">Делай свой бизнес <strong>уже сегодня!</strong></div>
+    <p>Для получения бизнес плана заполните форму</p>
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="img/modal-man.png" alt="">
+      </div>
+      <div class="col-lg-6">
+        <div class="modal__form">
+          <div class="modal__form-item">
+          <input type="text" placeholder="Ваше имя">
+          </div>
+          <div class="modal__form-item">
+          <input type="text" placeholder="Номер телефона">
+          </div>
+          <div class="modal__form-item">
+          <input type="text" placeholder="Email адресс">
+          </div>
+          <button class="button inverse">ОТПРАВИТЬ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--SCRIPT -->
 <script src="js/jquery.js"></script> 
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
