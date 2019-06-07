@@ -19,4 +19,14 @@ $(document).ready(function() {
 		slidesToScroll: 3
 	});
 
+	//menu
+	$( ".menu-trigger" ).click(function() {
+		$( ".menu" ).addClass( "active" );
+		$( ".menu__overlay" ).addClass( "active" );
+	});
+	$( ".menu__overlay" ).click(function() {
+		$( ".menu" ).removeClass( "active" );
+		$(this).removeClass( "active" );
+	});
+
 });

@@ -404,6 +404,82 @@ textarea {
       color: #5e4f9c;
       padding-right: 7px; }
 
+.menu {
+  position: fixed;
+  top: 0;
+  left: -440px;
+  width: 440px;
+  height: 100vh;
+  background: #5a4f93;
+  z-index: 50;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  text-align: center;
+  overflow-y: auto;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s; }
+  .menu.active {
+    left: 0; }
+  .menu__logo {
+    display: block;
+    padding-bottom: 55px; }
+  .menu ul {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 60px; }
+    .menu ul li {
+      padding-bottom: 30px;
+      position: relative;
+      padding-left: 28px; }
+      .menu ul li:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: #f26723;
+        opacity: 0.4;
+        border-radius: 50%; }
+      .menu ul li:after {
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #f26723;
+        border-radius: 50%; }
+      .menu ul li a {
+        text-decoration: none; }
+      .menu ul li:hover:after {
+        background: #fff; }
+  .menu__button {
+    padding-bottom: 60px; }
+    .menu__button .button {
+      border-radius: 33px;
+      font-size: 24px;
+      box-shadow: 0 0 40px rgba(235, 93, 19, 0.25); }
+  .menu__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.8;
+    z-index: 49;
+    display: none; }
+    .menu__overlay.active {
+      display: block; }
+
 /*----------end-header----------*/
 /*----------main----------*/
 .main {
@@ -597,16 +673,20 @@ textarea {
     width: 100%; }
   .content__slider-block {
     box-shadow: 0 0 40px rgba(94, 79, 156, 0.4); }
-    .content__slider-block img {
+    .content__slider-block img, .content__slider-block iframe {
       display: block; }
   .content__img {
     box-shadow: 0 0 40px rgba(94, 79, 156, 0.4); }
-    .content__img img {
+    .content__img img, .content__img iframe {
       display: block; }
   .content__slider {
     position: relative; }
     .content__slider a {
       display: block; }
+    .content__slider-item {
+      display: block;
+      margin-bottom: -10px;
+      padding-bottom: 0; }
     .content__slider .slick-dots {
       position: absolute;
       bottom: -40px;
