@@ -1,18 +1,22 @@
 $(document).ready(function() {
-	//fancybox
-	$('.fancybox').fancybox({
-		helpers: {
-			overlay: {
-				locked: false
-			}
-		}
+	//slick
+	$('.content__slider-block').slick({
+		dots: true,
+		arrows: false,
 	});
-	
-	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
+	$('.clients').slick({
+		dots: true,
+		arrows: true,
+		infinite: true,
+		slidesToShow: 5,
+		slidesToScroll: 3
 	});
+	$('.prof').slick({
+		dots: true,
+		arrows: true,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3
+	});
+
 });

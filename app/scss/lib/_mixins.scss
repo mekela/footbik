@@ -11,7 +11,7 @@ overflow: hidden;
   padding: 13px 20px;
   text-decoration: none;
   text-align: center;
-  border: none;
+  border: 1px solid #f26723;
   display: inline-block;
   -webkit-appearance: none; 
   color: #ffffff;
@@ -19,6 +19,13 @@ overflow: hidden;
   font-weight: 400;
   text-transform: uppercase;
   border-radius: 20px;
+  &.inverse{
+    background: none;
+    color: #f26723;
+    &:hover{
+      color: #fff;
+    }
+  }
 }
 @mixin button_gradient($button_gradient){
   background: #f26723;
