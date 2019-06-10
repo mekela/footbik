@@ -11,54 +11,64 @@
     </div>
     <div class="bnr__subtitle">
         <div class="container">
-            Получайте стабильный доход   <a href="#" class="button">от <strong>2000$</strong>  в месяц</a> <br>
+            Получайте стабильный доход   <a  data-fancybox data-src="#modal"   class="button">от <strong>2000$</strong>  в месяц</a> <br>
             развивая следующее поколение.
         </div>
     </div>
     <div class="bnr__button">
         <div class="container">
-            <a href="#" class="button">получить бизнес-план</a>
+            <a data-fancybox data-src="#modal-thank"  class="button">получить бизнес-план</a>
         </div>
     </div>
 </div>
 <!-- /bnr -->
 <!-- child -->
-<div class="child">
+<div class="child" id="why">
     <div class="container">
         <div class="title">Если детский развивающий центр - то Футбик</div>
         <div class="row">
             <div class="col-lg-6">
-                <img src="img/child.png" alt="">
+                <img src="img/child.png" alt="" class="child__img">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 child__list">
+                <div class="child__item wow fadeInUp"  data-wow-delay="0s">
                 <p class="child__title"><span class="button inverse">ЧТО?</span></p>
                 <p>Футбик – это сеть клубов развивающего футбола для дошкольников, которая открывается по франшизе.</p>
+                </div>
+                <div class="child__item wow fadeInUp"  data-wow-delay="0.3s">
                 <p class="child__title"><span class="button inverse">КОГДА?</span></p>
                 <p>Сейчас! Рынок постоянно растет, а спрос превышает предложение.                </p>
+                </div>
+                <div class="child__item wow fadeInUp"  data-wow-delay="0.6s">
                 <p class="child__title"><span class="button inverse">ДЛЯ КОГО?</span></p>
                 <p>Родителям детей от <em>1,5</em> до <em>7</em> лет.                </p>
+                </div>
+                <div class="child__item wow fadeInUp"  data-wow-delay="0.9s">
                 <p class="child__title"><span class="button inverse">КАК?</span></p>
                 <p>Мы улучшаем личностные качества, социальные навыки, 
                     физические и футбольные характеристики. </p>
                 <p><strong>Научно доказано</strong> – дети, посещающие Footbik, в <span>5 раз</span> чаще опережают своих сверстников в развитии.
                     </p>
+                </div>
+                <div class="child__item wow fadeInUp"  data-wow-delay="1s">
                 <p class="child__title"><span class="button inverse">ПОЧЕМУ?</span></p>
                 <p>Футбик - масштабируемый бизнес, который должен быть представлен во всех жилых районах города, срок окупаемости от <em>0,5</em> до <em>2</em> лет. </p>
+                </div>
             </div>
         </div>
     </div>
     <div class="child__button">
-        <div class="container"><a href="#" class="button">получить бизнес-план</a></div>
+        <div class="container"><a  data-fancybox data-src="#modal"   class="button wow fadeInUp" >получить бизнес-план</a></div>
     </div>
 </div>
 <!-- /child -->
 <!-- preference -->
-<div class="preference">
+<div class="preference" id="pref">
     <div class="container">
         <div class="title">Наши преимущества</div>
         <div class="row">
             <div class="col-lg-3 col-md-6">
-                <div class="preference__item">
+                <div class="preference__item  wow fadeIn"  data-wow-delay="0s">
                     <div class="preference__numb">1</div>
                     <div class="preference__img"><img src="img/logo_totalsoccer.png" alt=""></div>
                     <h6>Голландская методика                    </h6>
@@ -66,7 +76,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="preference__item">
+                <div class="preference__item  wow fadeIn"  data-wow-delay="0.4s">
                     <div class="preference__numb">2</div>
                     <div class="preference__img"><img src="img/artificial-intelligence.png" alt=""></div>
                     <h6>Научно обоснованная эффективность тренировок
@@ -78,7 +88,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="preference__item">
+                <div class="preference__item  wow fadeIn"  data-wow-delay="0.8s">
                     <div class="preference__numb">3</div>
                     <div class="preference__img"><img src="img/graph.png" alt=""></div>
                     <h6>Высокий LTV (Lifetime Value)                        </h6>
@@ -86,7 +96,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="preference__item">
+                <div class="preference__item  wow fadeIn"  data-wow-delay="1.2s">
                     <div class="preference__numb">4</div>
                     <div class="preference__img"><img src="img/seo.png" alt=""></div>
                     <h6>Собственный университет                        </h6>
@@ -99,11 +109,11 @@
 </div>
 <!-- /preference -->
 <!-- content -->
-<div class="content">
+<div class="content" id="do">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-5">
-                <div class="content__title">
+                <div class="content__title valign">
                     <div class="content__title-top">
                         Другие говорят, 
                     </div>
@@ -126,11 +136,14 @@
 </div>
 <!-- /content -->
 <!-- money -->
-<div class="money">
+<div class="money" id="how">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-3">
-                <img src="img/money.png" alt="">
+                <div class="money__img">
+                    <figure class=" wow zoomIn"  data-wow-delay="0.2s"><img src="img/money.png" alt=""></figure>
+                    <div class="title">Сколько я заработаю?</div>
+                </div>
             </div>
             <div class="col-lg-6">
                 <div class="title">Сколько я заработаю?</div>
@@ -138,7 +151,7 @@
             </div>
             <div class="col-lg-3">
                 <div class="money__button">
-                <a href="#" class="button">заказать</a>
+                <a  data-fancybox data-src="#modal"   class="button">заказать</a>
                 </div>
             </div>
         </div>
@@ -146,24 +159,26 @@
 </div>
 <!-- /money -->
 <!-- content -->
-<div class="content">
+<div class="content bussiness-wrapper" id="our">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row ">
             <div class="col-lg-5">
-                <div class="content__title">
-                    <div class="content__title-top">
-                            Наша бизнес-модель  
+                <article class="bussiness">
+                    <div class="content__title">
+                        <div class="content__title-top">
+                                Наша бизнес-модель  
+                        </div>
+                        <div class="content__title-bottom">
+                            <strong>эффективна</strong>
+                        </div>
                     </div>
-                    <div class="content__title-bottom">
-                        <strong>эффективна</strong>
-                    </div>
-                </div>
-                <p>В наших клубах занимается более 3500 детей. У нас есть опыт как региональных клубов внутри Украины так и за рубежом (с русскоязычными, украиноязычными так и англоязычными потребителями).  </p>
-                <p> Наш бизнес показал свою эффективность на разных территориях учитывая разную культурные и национальные традиции. Сети хотят видеть наш бизнес в качестве якорного арендатора. Примером является сеть ТЦ в США «ее название». </p>     
-                <p><strong>За 5 лет существования у нас нет ни одного закрытого клуба!</strong> </p>
+                    <p>В наших клубах занимается более 3500 детей. У нас есть опыт как региональных клубов внутри Украины так и за рубежом (с русскоязычными, украиноязычными так и англоязычными потребителями).  </p>
+                    <p> Наш бизнес показал свою эффективность на разных территориях учитывая разную культурные и национальные традиции. Сети хотят видеть наш бизнес в качестве якорного арендатора. Примером является сеть ТЦ в США «ее название». </p>     
+                    <p><strong>За 5 лет существования у нас нет ни одного закрытого клуба!</strong> </p>
+                </article>
             </div>
             <div class="col-lg-7">
-                <div class="content__slider">
+                <div class="content__slider hide-mobile">
                     <div class="content__slider-block">
                         <div class="content__slider-item"><a href="img/video.jpg" data-fancybox=""><img src="img/video.jpg" alt=""></a></div>
                         <div class="content__slider-item"><a href="img/video.jpg" data-fancybox=""><img src="img/video.jpg" alt=""></a></div>
@@ -180,12 +195,12 @@
 </div>
 <!-- /map -->
 <!-- franchising -->
-<div class="franchising">
+<div class="franchising" id="ready">
     <div class="container">
         <div class="title"> Готовые решения для франчайзи</div>
         <div class="row">
             <div class="col-lg-4">
-                <div class="franchising__item">
+                <div class="franchising__item wow fadeIn"  data-wow-delay="0s">
                     <figure>
                       <img src="img/stadistics.png" alt="">
                     </figure>
@@ -193,7 +208,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="franchising__item">
+                <div class="franchising__item wow fadeIn"  data-wow-delay="0.4s">
                     <figure>
                         <img src="img/talk.png" alt="">
                     </figure>
@@ -201,7 +216,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="franchising__item">
+                <div class="franchising__item wow fadeIn"  data-wow-delay="0.8s">
                     <figure>
                           <img src="img/creativity.png" alt="">
                     </figure>
@@ -245,47 +260,47 @@
 </div>
 <!-- /videos -->
 <!-- structure -->
-<div class="structure">
+<div class="structure" id="structure">
     <div class="container">
         <div class="title">Структура компании</div>
         <div class="structure__button"><h5>ФРАНЧАЙЗИ</h5></div>
         <div class="structure__line"><img src="img/lines.png" alt=""></div>
         <div class="structure__section">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-6">
                     <figure>
                         <img src="img/avatar.png" alt="">
                     </figure>
                     <p>IT отдел</p>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-6">
                     <figure>
                         <img src="img/avatar2.png" alt="">
                     </figure>
                     <p>Маркетинг</p>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-6">
                     <figure>
                         <img src="img/avatar3.png" alt="">
                     </figure>
                     <p>Промо отдел</p>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-6">
                     <figure>
                         <img src="img/avatar4.png" alt="">
                     </figure>
                     <p>Главный
                             тренер</p>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-6">
                     <figure>
                         <img src="img/avatar5.png" alt="">
                     </figure>
                     <p>Call-center</p>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-6">
                     <figure>
-                        <img src="img/avatar5.png" alt="">
+                        <img src="img/avatar6.png" alt="">
                     </figure>
                     <p>Отдел закупок
                             /Склад</p>
@@ -296,8 +311,8 @@
 </div>
 <!-- /structure -->
 <!-- partner -->
-<div class="partner">
-    <div class="container">
+<div class="partner" id="what">
+    <div class="container partner__container">
         <div class="row justify-content-end">
             <div class="col-lg-5">
                 <div class="title"> Условия партнерства                    </div>
@@ -327,7 +342,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="partner__button">
-                <a href="#" class="button">получить бизнес-план</a>
+                <a  data-fancybox data-src="#modal"   class="button">получить бизнес-план</a>
                  </div>
             </div>
         </div>
@@ -335,12 +350,12 @@
 </div>
 <!-- /partner -->
 <!-- content -->
-<div class="content">
+<div class="content content-admin" id="social">
     <div class="container">
         <div class="title">Социальное доказательство</div>
         <div class="row align-items-center">
             <div class="col-lg-5">
-                <div class="content__title">
+                <div class="content__title content__title-admin">
                     <div class="content__title-bottom">
                         <small>Нам доверяет администрация  </small>
                     </div>
@@ -350,16 +365,16 @@
                        </b> </p>
             </div>
             <div class="col-lg-7">
-                <div class="content__img"><iframe width="100%" height="365" src="https://www.youtube.com/embed/BjiJ5JdfVAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="content__img hide-mobile"><iframe width="100%" height="365" src="https://www.youtube.com/embed/BjiJ5JdfVAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
         </div>
     </div>
 </div>
 <!-- /content -->
 <!-- client -->
-<div class="content">
+<div class="content client-wrap">
     <div class="container">
-        <div class="content__title">
+        <div class="content__title mobile-title">
             <div class="content__title-bottom">
                 <small>Нам доверяют Клиенты</small>
             </div>
@@ -383,44 +398,44 @@
 </div>
 <!-- /client -->
 <!-- prof -->
-<div class="content">
+<div class="content prof-wrap">
     <div class="container">
-        <div class="content__title">
+        <div class="content__title  mobile-title">
             <div class="content__title-bottom">
                 <small>Нам доверяют профессиональные футболисты                    </small>
             </div>
         </div>
        <div class="prof">
            <div class="prof__item">
-                <figure><img src="img/video-img.jpg" alt=""></figure>
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
                 <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
            <div class="prof__item">
-                <figure><img src="img/video-img.jpg" alt=""></figure>
-                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+               <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
            <div class="prof__item">
-                <figure><img src="img/video-img.jpg" alt=""></figure>
-                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+               <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
            <div class="prof__item">
-                <figure><img src="img/video-img.jpg" alt=""></figure>
-                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+               <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
            <div class="prof__item">
-                <figure><img src="img/video-img.jpg" alt=""></figure>
-                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+               <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
            <div class="prof__item">
-                <figure><img src="img/video-img.jpg" alt=""></figure>
-                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+               <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
        </div>
     </div>
 </div>
 <!-- /prof -->
 <!-- cite -->
-<div class="cite">
+<div class="cite" id="ceo">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8">

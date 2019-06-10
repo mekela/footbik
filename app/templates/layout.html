@@ -29,6 +29,7 @@
   <!--build:css css/styles.min.css-->
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/styles.css">
   <!--endbuild-->
 </head>
@@ -38,39 +39,48 @@
 <header class="header">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-4">
-        <div class="menu-trigger"><button><i class="fas fa-bars"></i>МЕНЮ</button></div>
+      <div class="col-md-4 col-2">
+        <div class="menu-trigger"><button id="open-button"><i class="fas fa-bars"></i>МЕНЮ</button></div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-8">
         <a href="/" class="logo"><img src="img/footbik-logo-easy.svg" alt=""></a>
+        <a href="tel:050 323 67 64" class="mobile-tel">+38 050 323 67 64</a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-2">
         <div class="header__contact">
-          <a href="#" class="tel">+38 050 323 67 64</a>
+            <a href="tel:050 323 67 64" class="tel">+38 050 323 67 64</a>
           <a  data-fancybox data-src="#modal"  class="button">ЗАКАЗАТЬ ЗВОНОК</a>
+          <a  data-fancybox data-src="#modal"  class="tel-trigger"><img src="img/phone.png" alt=""></a>
         </div>
       </div>
     </div>
   </div>
   <div class="menu">
-    <div class="menu__logo"><img src="img/footbik-logo.png" alt=""></div>
-    <ul>
-      <li><a href="#">ПОЧЕМУ МЫ</a></li>
-      <li><a href="#">Наши преимущества</a></li>
-      <li><a href="#">Другие говорят - мы делаем!</a></li>
-      <li><a href="#">Сколько я заработаю?</a></li>
-      <li><a href="#">Наша бизнес-модель</a></li>
-      <li><a href="#">Готовые решения для франчайзи</a></li>
-      <li><a href="#">Структура компании</a></li>
-      <li><a href="#">Что я получу</a></li>
-      <li><a href="#">Социальное доказательство</a></li>
-      <li><a href="#">Основатель клуба Футбик</a></li>
-    </ul>
-    <div class="menu__button">
-      <a data-fancybox data-src="#modal"  class="button">получить бизнес-план</a>
+    <div class="menu__inner">
+        <div class="menu__logo"><img src="img/footbik-logo.png" alt=""></div>
+        <ul>
+          <li><a href="#why">ПОЧЕМУ МЫ</a></li>
+          <li><a href="#pref">Наши преимущества</a></li>
+          <li><a href="#do">Другие говорят - мы делаем!</a></li>
+          <li><a href="#how">Сколько я заработаю?</a></li>
+          <li><a href="#our">Наша бизнес-модель</a></li>
+          <li><a href="#ready">Готовые решения для франчайзи</a></li>
+          <li><a href="#structure">Структура компании</a></li>
+          <li><a href="#what">Что я получу</a></li>
+          <li><a href="#social">Социальное доказательство</a></li>
+          <li><a href="#ceo">Основатель клуба Футбик</a></li>
+        </ul>
+        <div class="menu__button">
+          <a data-fancybox data-src="#modal"  class="button">получить бизнес-план</a>
+        </div>
+    </div>
+    <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+        <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+      </svg>
     </div>
   </div>
-  <div class="menu__overlay"></div>
+  <div class="menu__overlay" id="close-button"></div>
 </header>
 <!--end-header-->
 <!--main-->
@@ -92,7 +102,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="partner__button">
-                <a href="#" class="button">получить бизнес-план</a>
+                <a  data-fancybox data-src="#modal"   class="button">получить бизнес-план</a>
                  </div>
             </div>
         </div>
@@ -107,7 +117,7 @@
     <p>Для получения бизнес плана заполните форму</p>
     <div class="row">
       <div class="col-lg-6">
-        <img src="img/modal-man.png" alt="">
+        <img src="img/modal-man.png" alt="" class="hide-mobile">
       </div>
       <div class="col-lg-6">
         <div class="modal__form">
@@ -126,11 +136,33 @@
     </div>
   </div>
 </div>
+<div class="modal modal-thank" id="modal-thank">
+  <div class="modal__inner">
+    <div class="close-modal"><i class="fas fa-times"></i></div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="modal__img"><img src="img/thank-man.png" alt=""  class="hide-mobile"></div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text_center">
+          <div class="modal__success-img"><img src="img/success.png" alt=""></div>
+          <div class="title"><strong>СПАСИБО!</strong></div>
+          <p><b>Ваша заявка на бизнес-план 
+              отправлена успешно.</b> </p>
+          <p> В ближайшее время я с Вами свяжусь</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--SCRIPT -->
 <script src="js/jquery.js"></script> 
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 <!--build:js js/main.min.js -->
+<script src="js/snap.svg-min.js"></script>
+<script src="js/classie.js"></script>
 <script src="js/slick.js"></script>
+<script src="js/WOW.js"></script>
 <!-- endbuild -->
 <script src="js/common.js"></script>
 <!--[if IE]>

@@ -4,7 +4,7 @@ position: relative;
 overflow: hidden;
 }
 //buttons and inputs
-
+$color: #0cf;
 @mixin button($button){
   @include button_gradient('');
   font-family: $ffamily;
@@ -19,19 +19,62 @@ overflow: hidden;
   font-weight: 400;
   text-transform: uppercase;
   border-radius: 20px;
+  transition: all .3s;
+	position: relative;
+	overflow: hidden;
+  z-index: 1;
+  @include mq($max-width: 992px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   &.inverse{
     background: none;
     color: #f26723;
     &:hover{
       color: #fff;
     }
+    &:before{
+      display: none;
+    }
+    &:after{
+      display: none;
+    }
   }
+  &:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #eb5d13;
+		border-radius: 10rem;
+		z-index: -2;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: #e3440c;
+		transition: all .3s;
+		border-radius: 10rem;
+		z-index: -1;
+	}
+	&:hover {
+		color: #fff;
+		&:before {
+			width: 100%;
+		}
+	}
 }
 @mixin button_gradient($button_gradient){
   background: #f26723;
 }
 @mixin button_gradient_hover($button_gradient_hover){
-  background: #fb7b3c;
+  background: #e3440c;
 }
 
 @mixin input($input){

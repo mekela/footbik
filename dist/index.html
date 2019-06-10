@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="initial-scale=1"/>
+  <title>title</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+  <link rel="manifest" href="img/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,700i,900&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+<div class="wrapper">
+<!--header-->
+<header class="header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 col-2">
+        <div class="menu-trigger"><button id="open-button"><i class="fas fa-bars"></i>МЕНЮ</button></div>
+      </div>
+      <div class="col-md-4 col-8">
+        <a href="/" class="logo"><img src="img/footbik-logo-easy.svg" alt=""></a>
+        <a href="tel:050 323 67 64" class="mobile-tel">+38 050 323 67 64</a>
+      </div>
+      <div class="col-md-4 col-2">
+        <div class="header__contact">
+            <a href="tel:050 323 67 64" class="tel">+38 050 323 67 64</a>
+          <a  data-fancybox data-src="#modal"  class="button">ЗАКАЗАТЬ ЗВОНОК</a>
+          <a  data-fancybox data-src="#modal"  class="tel-trigger"><img src="img/phone.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="menu__inner">
+        <div class="menu__logo"><img src="img/footbik-logo.png" alt=""></div>
+        <ul>
+          <li><a href="#why">ПОЧЕМУ МЫ</a></li>
+          <li><a href="#pref">Наши преимущества</a></li>
+          <li><a href="#do">Другие говорят - мы делаем!</a></li>
+          <li><a href="#how">Сколько я заработаю?</a></li>
+          <li><a href="#our">Наша бизнес-модель</a></li>
+          <li><a href="#ready">Готовые решения для франчайзи</a></li>
+          <li><a href="#structure">Структура компании</a></li>
+          <li><a href="#what">Что я получу</a></li>
+          <li><a href="#social">Социальное доказательство</a></li>
+          <li><a href="#ceo">Основатель клуба Футбик</a></li>
+        </ul>
+        <div class="menu__button">
+          <a data-fancybox data-src="#modal"  class="button">получить бизнес-план</a>
+        </div>
+    </div>
+    <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+        <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="menu__overlay" id="close-button"></div>
+</header>
+<!--end-header-->
+<!--main-->
+<div class="main">
+
+
+   
+<!-- bnr -->
+<div class="bnr">
+    <div class="bnr__title">
+        <div class="container">
+            Откройте свой бизнес <br> по надежной франшизе
+        </div>
+    </div>
+    <div class="bnr__subtitle">
+        <div class="container">
+            Получайте стабильный доход   <a  data-fancybox data-src="#modal"   class="button">от <strong>2000$</strong>  в месяц</a> <br>
+            развивая следующее поколение.
+        </div>
+    </div>
+    <div class="bnr__button">
+        <div class="container">
+            <a data-fancybox data-src="#modal-thank"  class="button">получить бизнес-план</a>
+        </div>
+    </div>
+</div>
+<!-- /bnr -->
+<!-- child -->
+<div class="child" id="why">
+    <div class="container">
+        <div class="title">Если детский развивающий центр - то Футбик</div>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="img/child.png" alt="" class="child__img">
+            </div>
+            <div class="col-lg-6 child__list">
+                <div class="child__item wow fadeInUp"  data-wow-delay="0s">
+                <p class="child__title"><span class="button inverse">ЧТО?</span></p>
+                <p>Футбик – это сеть клубов развивающего футбола для дошкольников, которая открывается по франшизе.</p>
+                </div>
+                <div class="child__item wow fadeInUp"  data-wow-delay="0.3s">
+                <p class="child__title"><span class="button inverse">КОГДА?</span></p>
+                <p>Сейчас! Рынок постоянно растет, а спрос превышает предложение.                </p>
+                </div>
+                <div class="child__item wow fadeInUp"  data-wow-delay="0.6s">
+                <p class="child__title"><span class="button inverse">ДЛЯ КОГО?</span></p>
+                <p>Родителям детей от <em>1,5</em> до <em>7</em> лет.                </p>
+                </div>
+                <div class="child__item wow fadeInUp"  data-wow-delay="0.9s">
+                <p class="child__title"><span class="button inverse">КАК?</span></p>
+                <p>Мы улучшаем личностные качества, социальные навыки, 
+                    физические и футбольные характеристики. </p>
+                <p><strong>Научно доказано</strong> – дети, посещающие Footbik, в <span>5 раз</span> чаще опережают своих сверстников в развитии.
+                    </p>
+                </div>
+                <div class="child__item wow fadeInUp"  data-wow-delay="1s">
+                <p class="child__title"><span class="button inverse">ПОЧЕМУ?</span></p>
+                <p>Футбик - масштабируемый бизнес, который должен быть представлен во всех жилых районах города, срок окупаемости от <em>0,5</em> до <em>2</em> лет. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="child__button">
+        <div class="container"><a  data-fancybox data-src="#modal"   class="button wow fadeInUp" >получить бизнес-план</a></div>
+    </div>
+</div>
+<!-- /child -->
+<!-- preference -->
+<div class="preference" id="pref">
+    <div class="container">
+        <div class="title">Наши преимущества</div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="preference__item  wow fadeIn"  data-wow-delay="0s">
+                    <div class="preference__numb">1</div>
+                    <div class="preference__img"><img src="img/logo_totalsoccer.png" alt=""></div>
+                    <h6>Голландская методика                    </h6>
+                    <p>Занятия проходят согласно авторской методике раннего развития детей на основе обучения игре в футбол, разработаны футбольной академией <em> TOTAL SOCCER METHOD ACADEMY (Нидерланды)</em> которая позволяет подготовить ребенка к взрослой жизни и большому спорту.                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="preference__item  wow fadeIn"  data-wow-delay="0.4s">
+                    <div class="preference__numb">2</div>
+                    <div class="preference__img"><img src="img/artificial-intelligence.png" alt=""></div>
+                    <h6>Научно обоснованная эффективность тренировок
+                    </h6>
+                    <p>
+                            У детей, занимающихся в Footbik <em> более 110 часов,</em> увеличивается шанс опередить своих сверстников. В частности в
+                        <em>4.6 раз</em> чаще наблюдается прогресс мелких моторных навыков, <em>5.2 раз</em> крупной моторики, <em>5 раз</em> навыков самообслуживания и <em>3.2 раза</em> в когнитивном(интеллектуальном) развитии.                               
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="preference__item  wow fadeIn"  data-wow-delay="0.8s">
+                    <div class="preference__numb">3</div>
+                    <div class="preference__img"><img src="img/graph.png" alt=""></div>
+                    <h6>Высокий LTV (Lifetime Value)                        </h6>
+                    <p>За счет сбалансированных и систематических тренировок, мотивационных наград и геймификации у ребенка сохраняется и поддерживается постоянный интерес к занятиям. А родители получают регулярную обратную связь и рекомендации по развитию, наблюдая прогресса ребенка по дневнику, а также общаясь с тренерами после каждой тренировки.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="preference__item  wow fadeIn"  data-wow-delay="1.2s">
+                    <div class="preference__numb">4</div>
+                    <div class="preference__img"><img src="img/seo.png" alt=""></div>
+                    <h6>Собственный университет                        </h6>
+                    <p>Мы постоянно развиваемся и вкладываем в R&D(research and development). Нами разработаны и систематизированы все материалы, которые понадобятся Вам для работы. Они собраны в онлайн университете, в котором регулярно проводятся обновления. Таким образом вы получаете доступ к постоянно обновляемой базе знаний.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /preference -->
+<!-- content -->
+<div class="content" id="do">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="content__title valign">
+                    <div class="content__title-top">
+                        Другие говорят, 
+                    </div>
+                    <div class="content__title-bottom">
+                        <strong>мы делаем!</strong>
+                    </div>
+                </div>
+                <p>Наши воспитанник в отличии от других, реально показывают результат обучения по нашей методике. </p>
+            </div>
+            <div class="col-lg-7">
+                <div class="content__slider">
+                    <div class="content__slider-block">
+                        <div class="content__slider-item"><iframe width="100%" height="365" src="https://www.youtube.com/embed/ZPgdlNa--oA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="content__slider-item"><iframe width="100%" height="365" src="https://www.youtube.com/embed/T7YHPhfxaiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /content -->
+<!-- money -->
+<div class="money" id="how">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <div class="money__img">
+                    <figure class=" wow zoomIn"  data-wow-delay="0.2s"><img src="img/money.png" alt=""></figure>
+                    <div class="title">Сколько я заработаю?</div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="title">Сколько я заработаю?</div>
+                <div class="uCalc_176210"></div><script> var widgetOptions176210 = { bg_color: "transparent" }; (function() { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=176210&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();</script>
+            </div>
+            <div class="col-lg-3">
+                <div class="money__button">
+                <a  data-fancybox data-src="#modal"   class="button">заказать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /money -->
+<!-- content -->
+<div class="content bussiness-wrapper" id="our">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-5">
+                <article class="bussiness">
+                    <div class="content__title">
+                        <div class="content__title-top">
+                                Наша бизнес-модель  
+                        </div>
+                        <div class="content__title-bottom">
+                            <strong>эффективна</strong>
+                        </div>
+                    </div>
+                    <p>В наших клубах занимается более 3500 детей. У нас есть опыт как региональных клубов внутри Украины так и за рубежом (с русскоязычными, украиноязычными так и англоязычными потребителями).  </p>
+                    <p> Наш бизнес показал свою эффективность на разных территориях учитывая разную культурные и национальные традиции. Сети хотят видеть наш бизнес в качестве якорного арендатора. Примером является сеть ТЦ в США «ее название». </p>     
+                    <p><strong>За 5 лет существования у нас нет ни одного закрытого клуба!</strong> </p>
+                </article>
+            </div>
+            <div class="col-lg-7">
+                <div class="content__slider hide-mobile">
+                    <div class="content__slider-block">
+                        <div class="content__slider-item"><a href="img/video.jpg" data-fancybox=""><img src="img/video.jpg" alt=""></a></div>
+                        <div class="content__slider-item"><a href="img/video.jpg" data-fancybox=""><img src="img/video.jpg" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /content -->
+<!-- map -->
+<div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10938209.494752772!2d22.208320093863712!3d47.98547154770034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2z0KPQutGA0LDRl9C90LA!5e0!3m2!1suk!2sua!4v1559839439576!5m2!1suk!2sua" width="100%" height="584" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<!-- /map -->
+<!-- franchising -->
+<div class="franchising" id="ready">
+    <div class="container">
+        <div class="title"> Готовые решения для франчайзи</div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="franchising__item wow fadeIn"  data-wow-delay="0s">
+                    <figure>
+                      <img src="img/stadistics.png" alt="">
+                    </figure>
+                    <p>Готовая и проверенная финансовая модель и бизнес-стратегия, проверенная на практике</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="franchising__item wow fadeIn"  data-wow-delay="0.4s">
+                    <figure>
+                        <img src="img/talk.png" alt="">
+                    </figure>
+                    <p>Профессиональная консультация по вопросам успешного ведения бизнеса на всех этапах развития                        </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="franchising__item wow fadeIn"  data-wow-delay="0.8s">
+                    <figure>
+                          <img src="img/creativity.png" alt="">
+                    </figure>
+                    <p>Подробная пошаговая инструкция по открытию, уникальный дизайн-проект и полный набор дизайн-макетов                         </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /franchising -->
+<!-- videos -->
+<div class="videos">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <figure class="videos__item">
+                    <iframe width="100%" height="215" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption>Футбик на ХТЗ. Вечеринка!                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <figure class="videos__item">
+                   <iframe width="100%" height="215" src="https://www.youtube.com/embed/JvHlwJjmJBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption>Футбик на ХТЗ. Вечеринка!                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <figure class="videos__item">
+                    <iframe width="100%" height="215" src="https://www.youtube.com/embed/omqJDMeFrxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption>Футбик на ХТЗ. Вечеринка!                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <figure class="videos__item">
+                    <iframe width="100%" height="215" src="https://www.youtube.com/embed/JvHlwJjmJBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption>Футбик на ХТЗ. Вечеринка!                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /videos -->
+<!-- structure -->
+<div class="structure" id="structure">
+    <div class="container">
+        <div class="title">Структура компании</div>
+        <div class="structure__button"><h5>ФРАНЧАЙЗИ</h5></div>
+        <div class="structure__line"><img src="img/lines.png" alt=""></div>
+        <div class="structure__section">
+            <div class="row">
+                <div class="col-lg-2 col-6">
+                    <figure>
+                        <img src="img/avatar.png" alt="">
+                    </figure>
+                    <p>IT отдел</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <figure>
+                        <img src="img/avatar2.png" alt="">
+                    </figure>
+                    <p>Маркетинг</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <figure>
+                        <img src="img/avatar3.png" alt="">
+                    </figure>
+                    <p>Промо отдел</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <figure>
+                        <img src="img/avatar4.png" alt="">
+                    </figure>
+                    <p>Главный
+                            тренер</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <figure>
+                        <img src="img/avatar5.png" alt="">
+                    </figure>
+                    <p>Call-center</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <figure>
+                        <img src="img/avatar6.png" alt="">
+                    </figure>
+                    <p>Отдел закупок
+                            /Склад</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /structure -->
+<!-- partner -->
+<div class="partner" id="what">
+    <div class="container partner__container">
+        <div class="row justify-content-end">
+            <div class="col-lg-5">
+                <div class="title"> Условия партнерства                    </div>
+                <ul>
+                    <li>  Право использовать бренд «Footbik»</li>
+                    <li>  Готовый персональный дизайн-проект Вашего клуба</li>
+                    <li>  Уникальная методика тренировок, разработанная TSM Академией (Нидерланды), которая применяется в Footbik</li>
+                    <li>  Доступ к постоянно обновляемой информации в университете</li>
+                    <li>  Обучение персонала и тренеров</li>
+                    <li>  Качественный инвентарь и мебель</li>
+                    <li>  Система привлечения и обработки потенциальных Клиентов</li>
+                    <li>  CRM-система</li>
+                    <li>  Организация процесса предпродаж (Presale)</li>
+                    <li>  Выезд команды запуска на открытие Вашего клуба и на начало продаж</li>
+                    <li>  Систематическая аттестация персонала, которая дает Вам возможность быть уверенным в квалификации</li>
+                    <li>  Реклама Ваших маркетинговых мероприятий в корпоративных социальных сетях и на официальном сайте
+                            </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container partner__bottom">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h4>Получите бизнес-план по открытию клуба 
+                        развивающего футбола для дошкольников прямо сейчас</h4>
+            </div>
+            <div class="col-lg-4">
+                <div class="partner__button">
+                <a  data-fancybox data-src="#modal"   class="button">получить бизнес-план</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /partner -->
+<!-- content -->
+<div class="content content-admin" id="social">
+    <div class="container">
+        <div class="title">Социальное доказательство</div>
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="content__title content__title-admin">
+                    <div class="content__title-bottom">
+                        <small>Нам доверяет администрация  </small>
+                    </div>
+                </div>
+                <p>Вручение благодарности создателю клуба Footbik Кабану Евгению Евгеньевичу от директора Департамента по делам семьи, молодежи и спорта Харьковского городского совета –</p>
+                <p><b>Чубарова Алексея Сергеевича
+                       </b> </p>
+            </div>
+            <div class="col-lg-7">
+                <div class="content__img hide-mobile"><iframe width="100%" height="365" src="https://www.youtube.com/embed/BjiJ5JdfVAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /content -->
+<!-- client -->
+<div class="content client-wrap">
+    <div class="container">
+        <div class="content__title mobile-title">
+            <div class="content__title-bottom">
+                <small>Нам доверяют Клиенты</small>
+            </div>
+        </div>
+       <div class="clients">
+           <div class="clients__item"><a href="img/IMG_7786.jpg" data-fancybox="gallery"><img src="img/IMG_7786.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/IMG_7781.jpg" data-fancybox="gallery"><img src="img/IMG_7781.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/О7.jpg" data-fancybox="gallery"><img src="img/О7.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/О10.jpg" data-fancybox="gallery"><img src="img/О10.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/q.png" data-fancybox="gallery"><img src="img/q.png" alt=""></a></div>
+           <div class="clients__item"><a href="img/О1.jpg" data-fancybox="gallery"><img src="img/О1.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/bt4.jpg" data-fancybox="gallery"><img src="img/bt4.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/О2.jpg" data-fancybox="gallery"><img src="img/О2.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/IMG_7700.jpg" data-fancybox="gallery"><img src="img/IMG_7700.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/bt2.jpg" data-fancybox="gallery"><img src="img/bt2.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/bt1.jpg" data-fancybox="gallery"><img src="img/bt1.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/1.png" data-fancybox="gallery"><img src="img/1.png" alt=""></a></div>
+           <div class="clients__item"><a href="img/IMG_7796.jpg" data-fancybox="gallery"><img src="img/IMG_7796.jpg" alt=""></a></div>
+       </div>
+    </div>
+</div>
+<!-- /client -->
+<!-- prof -->
+<div class="content prof-wrap">
+    <div class="container">
+        <div class="content__title  mobile-title">
+            <div class="content__title-bottom">
+                <small>Нам доверяют профессиональные футболисты                    </small>
+            </div>
+        </div>
+       <div class="prof">
+           <div class="prof__item">
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+           </div>
+           <div class="prof__item">
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+               <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+           </div>
+           <div class="prof__item">
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+               <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+           </div>
+           <div class="prof__item">
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+               <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+           </div>
+           <div class="prof__item">
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+               <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+           </div>
+           <div class="prof__item">
+                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+               <p>Турнир Footbik Cup Open — смотрим, как все было</p>
+           </div>
+       </div>
+    </div>
+</div>
+<!-- /prof -->
+<!-- cite -->
+<div class="cite" id="ceo">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="title">Основатель клуба Футбик</div>
+                <div class="cite__section">
+                    <blockquote>
+                        <p>Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности способствует подготовки и реализации направлений прогрессивного развития. Равным образом укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+                       </p>
+                       <p>
+                        Равным образом консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.развития. 
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="cite__img">
+                    <img src="img/man.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /cite -->
+
+
+
+</div>
+<!--end-main-->
+<!--footer-->
+<footer class="footer">
+    <div class="container partner__bottom">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h4>Получите бизнес-план по открытию клуба 
+                        развивающего футбола для дошкольников прямо сейчас</h4>
+            </div>
+            <div class="col-lg-4">
+                <div class="partner__button">
+                <a  data-fancybox data-src="#modal"   class="button">получить бизнес-план</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end-footer-->
+</div>
+<div class="modal" id="modal">
+  <div class="modal__inner">
+    <div class="close-modal"><i class="fas fa-times"></i></div>
+    <div class="title">Делай свой бизнес <strong>уже сегодня!</strong></div>
+    <p>Для получения бизнес плана заполните форму</p>
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="img/modal-man.png" alt="" class="hide-mobile">
+      </div>
+      <div class="col-lg-6">
+        <div class="modal__form">
+          <div class="modal__form-item">
+          <input type="text" placeholder="Ваше имя">
+          </div>
+          <div class="modal__form-item">
+          <input type="text" placeholder="Номер телефона">
+          </div>
+          <div class="modal__form-item">
+          <input type="text" placeholder="Email адресс">
+          </div>
+          <button class="button inverse">ОТПРАВИТЬ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-thank" id="modal-thank">
+  <div class="modal__inner">
+    <div class="close-modal"><i class="fas fa-times"></i></div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="modal__img"><img src="img/thank-man.png" alt=""  class="hide-mobile"></div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text_center">
+          <div class="modal__success-img"><img src="img/success.png" alt=""></div>
+          <div class="title"><strong>СПАСИБО!</strong></div>
+          <p><b>Ваша заявка на бизнес-план 
+              отправлена успешно.</b> </p>
+          <p> В ближайшее время я с Вами свяжусь</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--SCRIPT -->
+<script src="js/jquery.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/common.js"></script>
+<!--[if IE]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- END OF SCRIPT -->
+
+</body>
+</html>
