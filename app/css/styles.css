@@ -306,8 +306,8 @@ input[type=text], input[type=email], input[type=tel], input[type=search], input[
   input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, input[type=password]:focus, input[type=date]:focus, input[type=url]:focus, textarea:focus {
     box-shadow: 0 0 2px #99e6f9; }
   input[type=text].red_input, input[type=email].red_input, input[type=tel].red_input, input[type=search].red_input, input[type=password].red_input, input[type=date].red_input, input[type=url].red_input, textarea.red_input {
-    box-shadow: 0 0 2px  #ff2d50;
-    background: #fdc4ce; }
+    background: rgba(255, 0, 0, 0.15);
+    border-color: #ff2d50; }
 
 input::-webkit-input-placeholder {
   color: inherit; }
@@ -1446,6 +1446,9 @@ textarea {
   @media only screen and (max-width: 992px) {
     .modal {
       padding: 20px; } }
+  @media only screen and (min-width: 992px) {
+    .modal {
+      min-width: 700px; } }
   .modal .title {
     padding-bottom: 10px; }
     .modal .title strong {

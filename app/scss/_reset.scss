@@ -263,8 +263,8 @@ input[type=text], input[type=email], input[type=tel], input[type=search], input[
      @include input_focus('');
    }
    &.red_input{
-      box-shadow: 0 0 2px  #ff2d50;
-      background:#fdc4ce;
+      background:rgba($color: #f00, $alpha: 0.15);
+      border-color: #ff2d50;
    }
 }
 input::-webkit-input-placeholder {color: inherit;}

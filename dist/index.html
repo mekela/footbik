@@ -24,7 +24,6 @@
   <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,700i,900&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
@@ -38,14 +37,14 @@
         <div class="menu-trigger"><button id="open-button"><i class="fas fa-bars"></i>МЕНЮ</button></div>
       </div>
       <div class="col-md-4 col-8">
-        <a href="/" class="logo"><img src="img/footbik-logo-easy.svg" alt=""></a>
+        <a href="/" class="logo"><img class="lazy" src="img/footbik-logo-easy.svg" data-src="img/footbik-logo-easy.svg" data-srcset="img/footbik-logo-easy.svg" alt=""></a>
         <a href="tel:050 323 67 64" class="mobile-tel">+38 050 323 67 64</a>
       </div>
       <div class="col-md-4 col-2">
         <div class="header__contact">
             <a href="tel:050 323 67 64" class="tel">+38 050 323 67 64</a>
-          <a  data-fancybox data-src="#modal"  class="button">ЗАКАЗАТЬ ЗВОНОК</a>
-          <a  data-fancybox data-src="#modal"  class="tel-trigger"><img src="img/phone.png" alt=""></a>
+          <a  data-fancybox data-src="#modal2"  class="button">ЗАКАЗАТЬ ЗВОНОК</a>
+          <a  data-fancybox data-src="#modal2"  class="tel-trigger"><img src="img/phone.png" alt=""></a>
         </div>
       </div>
     </div>
@@ -98,7 +97,7 @@
     </div>
     <div class="bnr__button">
         <div class="container">
-            <a data-fancybox data-src="#modal-thank"  class="button">получить бизнес-план</a>
+            <a data-fancybox data-src="#modal"  class="button">получить бизнес-план</a>
         </div>
     </div>
 </div>
@@ -109,7 +108,7 @@
         <div class="title">Если детский развивающий центр - то Футбик</div>
         <div class="row">
             <div class="col-lg-6">
-                <img src="img/child.png" alt="" class="child__img">
+                <img src="img/child.png" data-src="img/child.png" alt=""  class="child__img lazy">
             </div>
             <div class="col-lg-6 child__list">
                 <div class="child__item wow fadeInUp"  data-wow-delay="0s">
@@ -151,7 +150,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="preference__item  wow fadeIn"  data-wow-delay="0s">
                     <div class="preference__numb">1</div>
-                    <div class="preference__img"><img src="img/logo_totalsoccer.png" alt=""></div>
+                    <div class="preference__img"><img src="img/logo_totalsoccer.png" data-src="img/logo_totalsoccer.png" alt="" class="lazy"></div>
                     <h6>Голландская методика                    </h6>
                     <p>Занятия проходят согласно авторской методике раннего развития детей на основе обучения игре в футбол, разработаны футбольной академией <em> TOTAL SOCCER METHOD ACADEMY (Нидерланды)</em> которая позволяет подготовить ребенка к взрослой жизни и большому спорту.                    </p>
                 </div>
@@ -159,7 +158,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="preference__item  wow fadeIn"  data-wow-delay="0.4s">
                     <div class="preference__numb">2</div>
-                    <div class="preference__img"><img src="img/artificial-intelligence.png" alt=""></div>
+                    <div class="preference__img"><img src="img/artificial-intelligence.png" data-src="img/artificial-intelligence.png" alt="" class="lazy"></div>
                     <h6>Научно обоснованная эффективность тренировок
                     </h6>
                     <p>
@@ -171,7 +170,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="preference__item  wow fadeIn"  data-wow-delay="0.8s">
                     <div class="preference__numb">3</div>
-                    <div class="preference__img"><img src="img/graph.png" alt=""></div>
+                    <div class="preference__img"><img src="img/graph.png" data-src="img/graph.png"  class="lazy" alt=""></div>
                     <h6>Высокий LTV (Lifetime Value)                        </h6>
                     <p>За счет сбалансированных и систематических тренировок, мотивационных наград и геймификации у ребенка сохраняется и поддерживается постоянный интерес к занятиям. А родители получают регулярную обратную связь и рекомендации по развитию, наблюдая прогресса ребенка по дневнику, а также общаясь с тренерами после каждой тренировки.</p>
                 </div>
@@ -179,7 +178,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="preference__item  wow fadeIn"  data-wow-delay="1.2s">
                     <div class="preference__numb">4</div>
-                    <div class="preference__img"><img src="img/seo.png" alt=""></div>
+                    <div class="preference__img"><img src="img/seo.png" data-src="img/seo.png" class="lazy" alt=""></div>
                     <h6>Собственный университет                        </h6>
                     <p>Мы постоянно развиваемся и вкладываем в R&D(research and development). Нами разработаны и систематизированы все материалы, которые понадобятся Вам для работы. Они собраны в онлайн университете, в котором регулярно проводятся обновления. Таким образом вы получаете доступ к постоянно обновляемой базе знаний.
                         </p>
@@ -207,8 +206,8 @@
             <div class="col-lg-7">
                 <div class="content__slider">
                     <div class="content__slider-block">
-                        <div class="content__slider-item"><iframe width="100%" height="365" src="https://www.youtube.com/embed/ZPgdlNa--oA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                        <div class="content__slider-item"><iframe width="100%" height="365" src="https://www.youtube.com/embed/T7YHPhfxaiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="content__slider-item"><iframe width="100%" height="365" data-src="https://www.youtube.com/embed/ZPgdlNa--oA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="content__slider-item"><iframe width="100%" height="365" data-src="https://www.youtube.com/embed/T7YHPhfxaiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
                 </div>
             </div>
@@ -222,7 +221,7 @@
         <div class="row align-items-center">
             <div class="col-lg-3">
                 <div class="money__img">
-                    <figure class=" wow zoomIn"  data-wow-delay="0.2s"><img src="img/money.png" alt=""></figure>
+                    <figure class=" wow zoomIn"  data-wow-delay="0.2s"><img src="img/money.png" class="lazy" data-src="img/money.png" alt=""></figure>
                     <div class="title">Сколько я заработаю?</div>
                 </div>
             </div>
@@ -261,8 +260,8 @@
             <div class="col-lg-7">
                 <div class="content__slider hide-mobile">
                     <div class="content__slider-block">
-                        <div class="content__slider-item"><a href="img/video.jpg" data-fancybox=""><img src="img/video.jpg" alt=""></a></div>
-                        <div class="content__slider-item"><a href="img/video.jpg" data-fancybox=""><img src="img/video.jpg" alt=""></a></div>
+                        <div class="content__slider-item"><a href="img/video.jpg" data-fancybox=""><img class="lazy" src="img/video.jpg" data-src="img/video.jpg" alt=""></a></div>
+                        <div class="content__slider-item"><a href="img/video.jpg" data-fancybox=""><img class="lazy" src="img/video.jpg" data-src="img/video.jpg" alt=""></a></div>
                     </div>
                 </div>
             </div>
@@ -272,7 +271,7 @@
 <!-- /content -->
 <!-- map -->
 <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10938209.494752772!2d22.208320093863712!3d47.98547154770034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2z0KPQutGA0LDRl9C90LA!5e0!3m2!1suk!2sua!4v1559839439576!5m2!1suk!2sua" width="100%" height="584" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe data-src="https://www.google.com/maps/d/embed?mid=1dt81EvvGUoAwJlNOVEHwBPSAwCBnBc3u" width="100%" height="584px"></iframe>
 </div>
 <!-- /map -->
 <!-- franchising -->
@@ -283,7 +282,7 @@
             <div class="col-lg-4">
                 <div class="franchising__item wow fadeIn"  data-wow-delay="0s">
                     <figure>
-                      <img src="img/stadistics.png" alt="">
+                      <img src="img/stadistics.png" data-src="img/stadistics.png" class="lazy" alt="">
                     </figure>
                     <p>Готовая и проверенная финансовая модель и бизнес-стратегия, проверенная на практике</p>
                 </div>
@@ -291,7 +290,7 @@
             <div class="col-lg-4">
                 <div class="franchising__item wow fadeIn"  data-wow-delay="0.4s">
                     <figure>
-                        <img src="img/talk.png" alt="">
+                        <img src="img/talk.png" data-src="img/talk.png"   class="lazy" alt="">
                     </figure>
                     <p>Профессиональная консультация по вопросам успешного ведения бизнеса на всех этапах развития                        </p>
                 </div>
@@ -299,7 +298,7 @@
             <div class="col-lg-4">
                 <div class="franchising__item wow fadeIn"  data-wow-delay="0.8s">
                     <figure>
-                          <img src="img/creativity.png" alt="">
+                          <img src="img/creativity.png" data-src="img/creativity.png"  class="lazy" alt="">
                     </figure>
                     <p>Подробная пошаговая инструкция по открытию, уникальный дизайн-проект и полный набор дизайн-макетов                         </p>
                 </div>
@@ -314,25 +313,25 @@
         <div class="row">
             <div class="col-lg-3 col-sm-6">
                 <figure class="videos__item">
-                    <iframe width="100%" height="215" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="215" data-src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    <figcaption>Футбик на ХТЗ. Вечеринка!                    </figcaption>
                 </figure>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <figure class="videos__item">
-                   <iframe width="100%" height="215" src="https://www.youtube.com/embed/JvHlwJjmJBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <iframe width="100%" height="215" data-src="https://www.youtube.com/embed/JvHlwJjmJBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    <figcaption>Футбик на ХТЗ. Вечеринка!                    </figcaption>
                 </figure>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <figure class="videos__item">
-                    <iframe width="100%" height="215" src="https://www.youtube.com/embed/omqJDMeFrxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="215" data-src="https://www.youtube.com/embed/omqJDMeFrxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    <figcaption>Футбик на ХТЗ. Вечеринка!                    </figcaption>
                 </figure>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <figure class="videos__item">
-                    <iframe width="100%" height="215" src="https://www.youtube.com/embed/JvHlwJjmJBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="215" data-src="https://www.youtube.com/embed/JvHlwJjmJBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    <figcaption>Футбик на ХТЗ. Вечеринка!                    </figcaption>
                 </figure>
             </div>
@@ -345,43 +344,43 @@
     <div class="container">
         <div class="title">Структура компании</div>
         <div class="structure__button"><h5>ФРАНЧАЙЗИ</h5></div>
-        <div class="structure__line"><img src="img/lines.png" alt=""></div>
+        <div class="structure__line"><img src="img/lines.png"  data-src="img/lines.png" class="lazy"  alt=""></div>
         <div class="structure__section">
             <div class="row">
                 <div class="col-lg-2 col-6">
                     <figure>
-                        <img src="img/avatar.png" alt="">
+                        <img src="img/avatar.png" data-src="img/avatar.png" class="lazy"  alt="">
                     </figure>
                     <p>IT отдел</p>
                 </div>
                 <div class="col-lg-2 col-6">
                     <figure>
-                        <img src="img/avatar2.png" alt="">
+                        <img src="img/avatar2.png" data-src="img/avatar2.png" class="lazy"  alt="">
                     </figure>
                     <p>Маркетинг</p>
                 </div>
                 <div class="col-lg-2 col-6">
                     <figure>
-                        <img src="img/avatar3.png" alt="">
+                        <img src="img/avatar3.png" data-src="img/avatar3.png" class="lazy"  alt="">
                     </figure>
                     <p>Промо отдел</p>
                 </div>
                 <div class="col-lg-2 col-6">
                     <figure>
-                        <img src="img/avatar4.png" alt="">
+                        <img src="img/avatar4.png" data-src="img/avatar4.png" class="lazy"  alt="">
                     </figure>
                     <p>Главный
                             тренер</p>
                 </div>
                 <div class="col-lg-2 col-6">
                     <figure>
-                        <img src="img/avatar5.png" alt="">
+                        <img src="img/avatar5.png" data-src="img/avatar5.png" class="lazy"   alt="">
                     </figure>
                     <p>Call-center</p>
                 </div>
                 <div class="col-lg-2 col-6">
                     <figure>
-                        <img src="img/avatar6.png" alt="">
+                        <img src="img/avatar6.png"  data-src="img/avatar6.png" class="lazy"  alt="">
                     </figure>
                     <p>Отдел закупок
                             /Склад</p>
@@ -446,7 +445,7 @@
                        </b> </p>
             </div>
             <div class="col-lg-7">
-                <div class="content__img hide-mobile"><iframe width="100%" height="365" src="https://www.youtube.com/embed/BjiJ5JdfVAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="content__img hide-mobile"><iframe width="100%" height="365" data-src="https://www.youtube.com/embed/BjiJ5JdfVAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
         </div>
     </div>
@@ -461,19 +460,19 @@
             </div>
         </div>
        <div class="clients">
-           <div class="clients__item"><a href="img/IMG_7786.jpg" data-fancybox="gallery"><img src="img/IMG_7786.jpg" alt=""></a></div>
-           <div class="clients__item"><a href="img/IMG_7781.jpg" data-fancybox="gallery"><img src="img/IMG_7781.jpg" alt=""></a></div>
-           <div class="clients__item"><a href="img/О7.jpg" data-fancybox="gallery"><img src="img/О7.jpg" alt=""></a></div>
-           <div class="clients__item"><a href="img/О10.jpg" data-fancybox="gallery"><img src="img/О10.jpg" alt=""></a></div>
-           <div class="clients__item"><a href="img/q.png" data-fancybox="gallery"><img src="img/q.png" alt=""></a></div>
-           <div class="clients__item"><a href="img/О1.jpg" data-fancybox="gallery"><img src="img/О1.jpg" alt=""></a></div>
-           <div class="clients__item"><a href="img/bt4.jpg" data-fancybox="gallery"><img src="img/bt4.jpg" alt=""></a></div>
-           <div class="clients__item"><a href="img/О2.jpg" data-fancybox="gallery"><img src="img/О2.jpg" alt=""></a></div>
-           <div class="clients__item"><a href="img/IMG_7700.jpg" data-fancybox="gallery"><img src="img/IMG_7700.jpg" alt=""></a></div>
-           <div class="clients__item"><a href="img/bt2.jpg" data-fancybox="gallery"><img src="img/bt2.jpg" alt=""></a></div>
-           <div class="clients__item"><a href="img/bt1.jpg" data-fancybox="gallery"><img src="img/bt1.jpg" alt=""></a></div>
-           <div class="clients__item"><a href="img/1.png" data-fancybox="gallery"><img src="img/1.png" alt=""></a></div>
-           <div class="clients__item"><a href="img/IMG_7796.jpg" data-fancybox="gallery"><img src="img/IMG_7796.jpg" alt=""></a></div>
+           <div class="clients__item"><a href="img/IMG_7786.jpg" data-fancybox="gallery"><img data-src="img/IMG_7786.jpg" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/IMG_7781.jpg" data-fancybox="gallery"><img data-src="img/IMG_7781.jpg" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/О7.jpg" data-fancybox="gallery"><img data-src="img/О7.jpg" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/О10.jpg" data-fancybox="gallery"><img data-src="img/О10.jpg" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/q.png" data-fancybox="gallery"><img data-src="img/q.png" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/О1.jpg" data-fancybox="gallery"><img data-src="img/О1.jpg" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/bt4.jpg" data-fancybox="gallery"><img data-src="img/bt4.jpg" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/О2.jpg" data-fancybox="gallery"><img data-src="img/О2.jpg" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/IMG_7700.jpg" data-fancybox="gallery"><img data-src="img/IMG_7700.jpg" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/bt2.jpg" data-fancybox="gallery"><img data-src="img/bt2.jpg" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/bt1.jpg" data-fancybox="gallery"><img data-src="img/bt1.jpg" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/1.png" data-fancybox="gallery"><img data-src="img/1.png" class="lazy" alt=""></a></div>
+           <div class="clients__item"><a href="img/IMG_7796.jpg" data-fancybox="gallery"><img data-src="img/IMG_7796.jpg" class="lazy" alt=""></a></div>
        </div>
     </div>
 </div>
@@ -488,27 +487,27 @@
         </div>
        <div class="prof">
            <div class="prof__item">
-                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+                <figure><iframe width="100%" height="206" data-src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
                 <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
            <div class="prof__item">
-                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+                <figure><iframe width="100%" height="206" data-src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
            <div class="prof__item">
-                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+                <figure><iframe width="100%" height="206" data-src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
            <div class="prof__item">
-                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+                <figure><iframe width="100%" height="206" data-src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
            <div class="prof__item">
-                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+                <figure><iframe width="100%" height="206" data-src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
            <div class="prof__item">
-                <figure><iframe width="100%" height="206" src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
+                <figure><iframe width="100%" height="206" data-src="https://www.youtube.com/embed/K3aGHBkVgFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>
                <p>Турнир Footbik Cup Open — смотрим, как все было</p>
            </div>
        </div>
@@ -533,7 +532,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="cite__img">
-                    <img src="img/man.png" alt="">
+                    <img data-src="img/man.png" src="img/man.png" class="lazy" alt="">
                 </div>
             </div>
         </div>
@@ -574,16 +573,53 @@
       </div>
       <div class="col-lg-6">
         <div class="modal__form">
-          <div class="modal__form-item">
-          <input type="text" placeholder="Ваше имя">
-          </div>
-          <div class="modal__form-item">
-          <input type="text" placeholder="Номер телефона">
-          </div>
-          <div class="modal__form-item">
-          <input type="text" placeholder="Email адресс">
-          </div>
-          <button class="button inverse">ОТПРАВИТЬ</button>
+          <form  id="form1" onsubmit='return false' autocomplete="off" >
+              <div class="modal__form-item">
+              <input type="text" name="uname" class="validate"  placeholder="Ваше имя">
+              </div>
+              <div class="modal__form-item">
+              <input type="text" name="phone" class="validate phone-input" placeholder="Номер телефона">
+              </div>
+              <div class="modal__form-item">
+              <input type="email" name="email" class="validate" placeholder="Email адресс">
+              </div>
+              <button class="button inverse send_button"  rel='form1'>ОТПРАВИТЬ</button>
+
+              <input class="form_name" type="hidden" name="form_name" value="Получить бизнес план"/>
+              <input type="hidden" name="action" value='send_form'/>
+              <input type="hidden" name="action_type" value='form_feedback'/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal2">
+  <div class="modal__inner">
+    <div class="close-modal"><i class="fas fa-times"></i></div>
+    <div class="title">ЗАКАЗАТЬ <strong>ЗВОНОК!</strong></div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="img/modal-man.png" alt="" class="hide-mobile">
+      </div>
+      <div class="col-lg-6">
+        <div class="modal__form">
+          <form  id="form2" onsubmit='return false' autocomplete="off" >
+              <div class="modal__form-item">
+              <input type="text" name="uname" class="validate"  placeholder="Ваше имя">
+              </div>
+              <div class="modal__form-item">
+              <input type="text" name="phone" class="validate phone-input" placeholder="Номер телефона">
+              </div>
+              <div class="modal__form-item">
+              <input type="email" name="email" class="validate" placeholder="Email адресс">
+              </div>
+              <button class="button inverse send_button"  rel='form2'>ОТПРАВИТЬ</button>
+
+              <input class="form_name" type="hidden" name="form_name" value="ЗАКАЗАТЬ ЗВОНОК"/>
+              <input type="hidden" name="action" value='send_form'/>
+              <input type="hidden" name="action_type" value='form_feedback'/>
+          </form>
         </div>
       </div>
     </div>
@@ -610,7 +646,6 @@
 </div>
 <!--SCRIPT -->
 <script src="js/jquery.js"></script> 
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 <script src="js/main.min.js"></script>
 <script src="js/common.js"></script>
 <!--[if IE]>

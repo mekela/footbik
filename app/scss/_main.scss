@@ -1182,6 +1182,9 @@
 	@include mq($max-width: 992px) {
 		padding: 20px;
 	}
+	@include mq($min-width: 992px) {
+		min-width: 700px;
+	}
 	.title{
 		padding-bottom: 10px;
 		strong{

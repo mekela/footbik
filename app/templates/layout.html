@@ -24,9 +24,9 @@
   <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,700i,900&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -43,14 +43,14 @@
         <div class="menu-trigger"><button id="open-button"><i class="fas fa-bars"></i>МЕНЮ</button></div>
       </div>
       <div class="col-md-4 col-8">
-        <a href="/" class="logo"><img src="img/footbik-logo-easy.svg" alt=""></a>
+        <a href="/" class="logo"><img class="lazy" src="img/footbik-logo-easy.svg" data-src="img/footbik-logo-easy.svg" data-srcset="img/footbik-logo-easy.svg" alt=""></a>
         <a href="tel:050 323 67 64" class="mobile-tel">+38 050 323 67 64</a>
       </div>
       <div class="col-md-4 col-2">
         <div class="header__contact">
             <a href="tel:050 323 67 64" class="tel">+38 050 323 67 64</a>
-          <a  data-fancybox data-src="#modal"  class="button">ЗАКАЗАТЬ ЗВОНОК</a>
-          <a  data-fancybox data-src="#modal"  class="tel-trigger"><img src="img/phone.png" alt=""></a>
+          <a  data-fancybox data-src="#modal2"  class="button">ЗАКАЗАТЬ ЗВОНОК</a>
+          <a  data-fancybox data-src="#modal2"  class="tel-trigger"><img src="img/phone.png" alt=""></a>
         </div>
       </div>
     </div>
@@ -121,16 +121,53 @@
       </div>
       <div class="col-lg-6">
         <div class="modal__form">
-          <div class="modal__form-item">
-          <input type="text" placeholder="Ваше имя">
-          </div>
-          <div class="modal__form-item">
-          <input type="text" placeholder="Номер телефона">
-          </div>
-          <div class="modal__form-item">
-          <input type="text" placeholder="Email адресс">
-          </div>
-          <button class="button inverse">ОТПРАВИТЬ</button>
+          <form  id="form1" onsubmit='return false' autocomplete="off" >
+              <div class="modal__form-item">
+              <input type="text" name="uname" class="validate"  placeholder="Ваше имя">
+              </div>
+              <div class="modal__form-item">
+              <input type="text" name="phone" class="validate phone-input" placeholder="Номер телефона">
+              </div>
+              <div class="modal__form-item">
+              <input type="email" name="email" class="validate" placeholder="Email адресс">
+              </div>
+              <button class="button inverse send_button"  rel='form1'>ОТПРАВИТЬ</button>
+
+              <input class="form_name" type="hidden" name="form_name" value="Получить бизнес план"/>
+              <input type="hidden" name="action" value='send_form'/>
+              <input type="hidden" name="action_type" value='form_feedback'/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal2">
+  <div class="modal__inner">
+    <div class="close-modal"><i class="fas fa-times"></i></div>
+    <div class="title">ЗАКАЗАТЬ <strong>ЗВОНОК!</strong></div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="img/modal-man.png" alt="" class="hide-mobile">
+      </div>
+      <div class="col-lg-6">
+        <div class="modal__form">
+          <form  id="form2" onsubmit='return false' autocomplete="off" >
+              <div class="modal__form-item">
+              <input type="text" name="uname" class="validate"  placeholder="Ваше имя">
+              </div>
+              <div class="modal__form-item">
+              <input type="text" name="phone" class="validate phone-input" placeholder="Номер телефона">
+              </div>
+              <div class="modal__form-item">
+              <input type="email" name="email" class="validate" placeholder="Email адресс">
+              </div>
+              <button class="button inverse send_button"  rel='form2'>ОТПРАВИТЬ</button>
+
+              <input class="form_name" type="hidden" name="form_name" value="ЗАКАЗАТЬ ЗВОНОК"/>
+              <input type="hidden" name="action" value='send_form'/>
+              <input type="hidden" name="action_type" value='form_feedback'/>
+          </form>
         </div>
       </div>
     </div>
@@ -157,12 +194,14 @@
 </div>
 <!--SCRIPT -->
 <script src="js/jquery.js"></script> 
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 <!--build:js js/main.min.js -->
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/snap.svg-min.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/WOW.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/underscore-min.js"></script>
 <!-- endbuild -->
 <script src="js/common.js"></script>
 <!--[if IE]>

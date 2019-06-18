@@ -81,6 +81,49 @@ $(document).ready(function() {
 		return false;
 	});
 
+	/* - - - - - - - - - - - - - -   valid  - - - - - - - - - - - - - - - - */
+	$(".phone-input").mask("+38(099)999-99-99");
+
+	$('.send_button').click(function(){
+		var parentClass=$(this).attr('rel');
+		
+		   validate=1;
+		   validate_msg='';
+		   form=$('#'+$(this).attr('rel'));
+			jQuery.each(form.find('.validate'), function(key, value) {
+			   if($(this).val()==''){
+				   validate_msg+=$(this).attr('title')+'\n';validate=0;
+				   $(this).focus();
+				   $(this).addClass('red_input');
+			   }else{
+				   $(this).removeClass('red_input');
+			   }
+		   });
+		   if(validate==1){
+			   $.ajax({
+				   url: 'ajax.php',
+				   data: 'action=send_form&'+form.serialize(),
+				   success: function(data){
+						$.fancybox.open(
+							{
+								src  : '#modal-thank',
+								type  : 'inline',
+								opts : {
+									afterShow : function( instance, current ) {
+										console.info( 'done!' );
+									}
+								}
+							}
+						);
+					   $('.validate').val('');
+				   }
+			   });
+			   
+		   }else{
+			   /*alert(validate_msg);*/
+		   } 
+	   });
+
 });
 
 (function() {
@@ -143,3 +186,60 @@ $(document).ready(function() {
 
 //wow
 new WOW().init();
+
+//lazyload
+document.addEventListener("DOMContentLoaded", function() {
+	let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+	let active = false;
+  
+	const lazyLoad = function() {
+	  if (active === false) {
+		active = true;
+  
+		setTimeout(function() {
+		  lazyImages.forEach(function(lazyImage) {
+			if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+			  lazyImage.src = lazyImage.dataset.src;
+			  lazyImage.classList.remove("lazy");
+  
+			  lazyImages = lazyImages.filter(function(image) {
+				return image !== lazyImage;
+			  });
+  
+			  if (lazyImages.length === 0) {
+				document.removeEventListener("scroll", lazyLoad);
+				window.removeEventListener("resize", lazyLoad);
+				window.removeEventListener("orientationchange", lazyLoad);
+			  }
+			}
+		  });
+  
+		  active = false;
+		}, 200);
+	  }
+	};
+  
+	document.addEventListener("scroll", lazyLoad);
+	window.addEventListener("resize", lazyLoad);
+	window.addEventListener("orientationchange", lazyLoad);
+  });
+
+// LAZY LOAD FUNCTION
+function lazyLoad() {
+	$('iframe').each(function() {
+	  var frame = $(this),
+		  vidSource = $(frame).attr('data-src'),
+		  distance = $(frame).offset().top - $(window).scrollTop(),
+		  distTopBot = window.innerHeight - distance,
+		  distBotTop = distance + $(frame).height();
+  
+	  if (distTopBot >= 0 && distBotTop >= 0) { // if frame is partly in view
+		$(frame).attr('src', vidSource);
+		$(frame).removeAttr('data-src');
+	  }
+	});
+  }
+  var throttled = _.throttle(lazyLoad, 100);
+  $(window).scroll(throttled);
+  
+  
