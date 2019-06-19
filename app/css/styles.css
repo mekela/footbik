@@ -1192,20 +1192,21 @@ textarea {
       .clients .slick-arrow {
         display: none;
         opacity: 0; } }
-  .clients__item a {
-    display: block;
-    width: 165px;
-    height: 165px;
-    overflow: hidden;
-    border: 5px solid rgba(226, 96, 21, 0.2);
-    border-radius: 4px;
-    margin: 0 auto; }
-    @media only screen and (max-width: 992px) {
-      .clients__item a {
-        width: 291px;
-        height: 291px; } }
-  .clients__item img {
-    display: block; }
+  .clients__item {
+    padding: 0 15px; }
+    .clients__item a {
+      display: block;
+      width: auto;
+      overflow: hidden;
+      border: 5px solid rgba(226, 96, 21, 0.2);
+      border-radius: 4px;
+      margin: 0 auto; }
+      @media only screen and (max-width: 992px) {
+        .clients__item a {
+          width: 291px;
+          height: 291px; } }
+    .clients__item img {
+      display: block; }
   .clients .slick-dots {
     position: absolute;
     bottom: -47px;
@@ -1320,85 +1321,86 @@ textarea {
         display: none;
         opacity: 0; } }
 
-@media only screen and (max-width: 1200px) {
-  .cite {
-    padding-top: 30px; } }
-
-@media only screen and (max-width: 992px) {
-  .cite {
-    padding-top: 60px; } }
-
-.cite .title {
-  text-align: left;
-  margin-top: -25px; }
+.cite {
+  padding-top: 90px; }
+  @media only screen and (max-width: 1200px) {
+    .cite {
+      padding-top: 30px; } }
   @media only screen and (max-width: 992px) {
-    .cite .title {
-      margin-top: 0;
-      margin-bottom: 30px; } }
-
-.cite__section {
-  background: url(../img/cite.png);
-  width: 793px;
-  height: 288px;
-  margin-left: -22px;
-  position: relative;
-  overflow: hidden; }
-  @media only screen and (max-width: 992px) {
-    .cite__section {
-      width: auto;
-      height: auto;
-      margin-left: 0;
-      overflow: visible;
-      box-shadow: 0 0 27px 3px rgba(153, 153, 153, 0.15);
-      border-radius: 10px;
-      background: #ffffff;
-      z-index: 5; } }
-  .cite__section blockquote {
-    position: relative;
-    margin: 50px 58px;
-    width: 613px;
-    box-sizing: content-box;
-    color: #eb5d13;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.4; }
+    .cite {
+      padding-top: 60px; } }
+  .cite .title {
+    text-align: left; }
     @media only screen and (max-width: 992px) {
-      .cite__section blockquote {
+      .cite .title {
+        margin-top: 0;
+        margin-bottom: 30px; } }
+  .cite__section {
+    background: url(../img/cite.png);
+    margin-top: 27px;
+    background: #fff;
+    border-radius: 10px;
+    width: 793px;
+    height: auto;
+    margin-left: -22px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.14); }
+    @media only screen and (max-width: 992px) {
+      .cite__section {
         width: auto;
-        margin: 0;
-        padding: 33px 29px 44px 40px; } }
-    .cite__section blockquote:before {
-      content: url(../img/qoute.png);
-      position: absolute;
-      left: -25px;
-      top: -17px;
-      z-index: 2; }
+        height: auto;
+        margin-left: 0;
+        overflow: visible;
+        box-shadow: 0 0 27px 3px rgba(153, 153, 153, 0.15);
+        border-radius: 10px;
+        background: #ffffff;
+        z-index: 5; } }
+    .cite__section blockquote {
+      position: relative;
+      margin: 50px 50px 70px 50px;
+      width: auto;
+      box-sizing: content-box;
+      color: #eb5d13;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.4; }
       @media only screen and (max-width: 992px) {
-        .cite__section blockquote:before {
-          top: 10px;
-          left: 10px; } }
-    .cite__section blockquote:after {
-      content: url(../img/qoute.png);
-      position: absolute;
-      right: -13px;
-      bottom: 13px;
-      z-index: 2;
-      transform: scale(-1); }
-      @media only screen and (max-width: 992px) {
-        .cite__section blockquote:after {
-          top: 10px;
-          right: 10px; } }
-    .cite__section blockquote p {
-      padding-bottom: 15px; }
-
-.cite__img {
-  text-align: right;
-  padding: 25px 0 0 0; }
-  @media only screen and (max-width: 992px) {
-    .cite__img {
-      display: none; } }
-  .cite__img img {
-    display: inline-block; }
+        .cite__section blockquote {
+          width: auto;
+          margin: 0;
+          padding: 33px 29px 44px 40px; } }
+      .cite__section blockquote:before {
+        content: url(../img/qoute.png);
+        position: absolute;
+        left: -25px;
+        top: -17px;
+        z-index: 2; }
+        @media only screen and (max-width: 992px) {
+          .cite__section blockquote:before {
+            top: 10px;
+            left: 10px; } }
+      .cite__section blockquote:after {
+        content: url(../img/qoute.png);
+        position: absolute;
+        right: -13px;
+        bottom: 13px;
+        z-index: 2;
+        transform: scale(-1); }
+        @media only screen and (max-width: 992px) {
+          .cite__section blockquote:after {
+            top: 10px;
+            right: 10px; } }
+      .cite__section blockquote p {
+        padding-bottom: 15px; }
+  .cite__img {
+    text-align: right;
+    padding: 25px 0 0 0; }
+    @media only screen and (max-width: 992px) {
+      .cite__img {
+        display: none; } }
+    .cite__img img {
+      display: inline-block; }
 
 /*----------end main----------*/
 /*----------footer----------*/

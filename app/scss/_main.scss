@@ -900,10 +900,11 @@
 			}
 		}
 		&__item{
+			padding: 0 15px;
 			a{
 				display: block;
-				width: 165px;
-				height: 165px;
+				width: auto;
+				//height: 165px;
 				overflow: hidden;
 				//box-shadow: 0 0 19px 2px rgba(226, 96, 21, 0.25);
 				border: 5px solid rgba(226, 96, 21, 0.2);
@@ -1045,6 +1046,7 @@
 		}
 	}
 	.cite{
+		padding-top: 90px;
 		@include mq($max-width: 1200px) {
 			padding-top: 30px;
 		}
@@ -1053,7 +1055,7 @@
 		}
 		.title{
 			text-align: left;
-			margin-top: -25px;
+			//margin-top: -25px;
 			@include mq($max-width: 992px) {
 				margin-top: 0;
 				margin-bottom: 30px;
@@ -1061,12 +1063,16 @@
 		}
 		&__section{
 			background: url(../img/cite.png);
-			//margin-top: 27px;
+			margin-top: 27px;
+			//background-size: 100% 100%;
+			background: #fff;
+			border-radius: 10px;
 			width: 793px;
-			height: 288px;
+			height: auto;
 			margin-left: -22px;
 			position: relative;
 			overflow: hidden;
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.14);
 			@include mq($max-width: 992px) {
 				width: auto;
 				height: auto;
@@ -1079,8 +1085,8 @@
 			}
 			blockquote{
 				position: relative;
-				margin: 50px 58px;
-				width: 613px;
+				margin: 50px 50px 70px 50px;
+				width: auto;
 				box-sizing: content-box;
 				color: #eb5d13;
 				font-size: 16px;

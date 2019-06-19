@@ -8,7 +8,7 @@ $(document).ready(function() {
 		dots: true,
 		arrows: true,
 		infinite: true,
-		slidesToShow: 5,
+		slidesToShow: 4,
 		slidesToScroll: 3,
 		responsive: [
 			
