@@ -81,6 +81,13 @@ $(document).ready(function() {
 		return false;
 	});
 
+	//map
+	$('.map')
+	.click(function(){
+			$(this).find('iframe').addClass('clicked')})
+	.mouseleave(function(){
+			$(this).find('iframe').removeClass('clicked')});
+
 	/* - - - - - - - - - - - - - -   valid  - - - - - - - - - - - - - - - - */
 	$(".phone-input").mask("+38(099)999-99-99");
 
