@@ -108,6 +108,9 @@
 		text-align: center;
 		overflow-y: hidden;
 		@include transition(all 0.5s);
+		@include mq($max-width: 575px) {
+			max-width: 95%;
+		}
 		&__inner{
 			overflow-y: auto;
 			height: 100vh;
@@ -567,6 +570,44 @@
 					}
 				}
 			}
+			.slick-arrow{
+				position: absolute;
+				top: 50%;
+				z-index: 15;
+				background: url(../img/arrow-left.png) no-repeat center;
+				width: 29px;
+				height: 54px;
+				margin-top: -27px;
+				@include hide-text;
+				opacity: 0;
+				&.slick-next{
+					right: -60px;
+					@include mirror_flip();
+					@include mq($max-width: 1200px) {
+						right: -20px;
+					}
+					@include mq($max-width: 992px) {
+						right: 0px;
+					}
+				}
+				&.slick-prev{
+					left: -60px;
+					@include mq($max-width: 1200px) {
+						left: -20px;
+					}
+					@include mq($max-width: 992px) {
+						left: 0px;
+					}
+				}
+				@include mq($max-width: 992px) {
+					// display: none;
+					opacity: 1;
+					background: url(../img/arrow-mobile.png) no-repeat center;
+					top: auto;
+					bottom: -69px;
+					margin-top: 0;
+				}
+			}
 		}
 	}
 	.money{
@@ -617,7 +658,10 @@
 		}
 		&__calc{
 				overflow: hidden;
-				height: 283px;
+				height: 293px;
+				@include mq($max-width: 1200px) {
+					height: auto;
+				}
 		}
 	}
 	.bussiness-wrapper{
@@ -893,16 +937,26 @@
 				@include mq($max-width: 1200px) {
 					right: -20px;
 				}
+				@include mq($max-width: 992px) {
+					right: 0px;
+				}
 			}
 			&.slick-prev{
 				left: -60px;
 				@include mq($max-width: 1200px) {
 					left: -20px;
 				}
+				@include mq($max-width: 992px) {
+					left: 0px;
+				}
 			}
 			@include mq($max-width: 992px) {
-				display: none;
-				opacity: 0;
+				// display: none;
+				// opacity: 0;
+				background: url(../img/arrow-mobile.png) no-repeat center;
+				top: auto;
+				bottom: -69px;
+				margin-top: 0;
 			}
 		}
 		&__item{
@@ -919,8 +973,8 @@
 				margin: 0 auto;
 				margin-top: 19px;
 				@include mq($max-width: 992px) {
-					width: 291px;
-					height: 291px;
+					// width: 291px;
+					// height: 291px;
 				}
 			}
 			img{
@@ -1039,16 +1093,26 @@
 				@include mq($max-width: 1200px) {
 					right: -20px;
 				}
+				@include mq($max-width: 992px) {
+					right: 0px;
+				}
 			}
 			&.slick-prev{
 				left: -60px;
 				@include mq($max-width: 1200px) {
 					left: -20px;
 				}
+				@include mq($max-width: 992px) {
+					left: 0px;
+				}
 			}
 			@include mq($max-width: 992px) {
-				display: none;
-				opacity: 0;
+				// display: none;
+				opacity: 1;
+				background: url(../img/arrow-mobile.png) no-repeat center;
+				top: auto;
+				bottom: -60px;
+				margin-top: 0;
 			}
 		}
 	}

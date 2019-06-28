@@ -2,7 +2,7 @@ $(document).ready(function() {
 	//slick
 	$('.content__slider-block').slick({
 		dots: true,
-		arrows: false,
+		arrows: true,
 	});
 	$('.clients').slick({
 		dots: true,
@@ -10,6 +10,7 @@ $(document).ready(function() {
 		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 3,
+		adaptiveHeight: true,
 		responsive: [
 			
 			{

@@ -522,6 +522,9 @@ textarea {
   -webkit-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s; }
+  @media only screen and (max-width: 575px) {
+    .menu {
+      max-width: 95%; } }
   .menu__inner {
     overflow-y: auto;
     height: 100vh; }
@@ -899,6 +902,47 @@ textarea {
           .content__slider .slick-dots button {
             width: 12px;
             height: 12px; } }
+    .content__slider .slick-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 15;
+      background: url(../img/arrow-left.png) no-repeat center;
+      width: 29px;
+      height: 54px;
+      margin-top: -27px;
+      font: 0 / 0 a;
+      text-shadow: none;
+      color: transparent;
+      opacity: 0; }
+      .content__slider .slick-arrow.slick-next {
+        right: -60px;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+        filter: FlipH;
+        -ms-filter: "FlipH"; }
+        @media only screen and (max-width: 1200px) {
+          .content__slider .slick-arrow.slick-next {
+            right: -20px; } }
+        @media only screen and (max-width: 992px) {
+          .content__slider .slick-arrow.slick-next {
+            right: 0px; } }
+      .content__slider .slick-arrow.slick-prev {
+        left: -60px; }
+        @media only screen and (max-width: 1200px) {
+          .content__slider .slick-arrow.slick-prev {
+            left: -20px; } }
+        @media only screen and (max-width: 992px) {
+          .content__slider .slick-arrow.slick-prev {
+            left: 0px; } }
+      @media only screen and (max-width: 992px) {
+        .content__slider .slick-arrow {
+          opacity: 1;
+          background: url(../img/arrow-mobile.png) no-repeat center;
+          top: auto;
+          bottom: -69px;
+          margin-top: 0; } }
 
 .money {
   padding: 26px 0;
@@ -941,7 +985,10 @@ textarea {
           padding-left: 8px; } }
   .money__calc {
     overflow: hidden;
-    height: 283px; }
+    height: 293px; }
+    @media only screen and (max-width: 1200px) {
+      .money__calc {
+        height: auto; } }
 
 .bussiness-wrapper {
   padding-bottom: 60px; }
@@ -1188,15 +1235,23 @@ textarea {
       @media only screen and (max-width: 1200px) {
         .clients .slick-arrow.slick-next {
           right: -20px; } }
+      @media only screen and (max-width: 992px) {
+        .clients .slick-arrow.slick-next {
+          right: 0px; } }
     .clients .slick-arrow.slick-prev {
       left: -60px; }
       @media only screen and (max-width: 1200px) {
         .clients .slick-arrow.slick-prev {
           left: -20px; } }
+      @media only screen and (max-width: 992px) {
+        .clients .slick-arrow.slick-prev {
+          left: 0px; } }
     @media only screen and (max-width: 992px) {
       .clients .slick-arrow {
-        display: none;
-        opacity: 0; } }
+        background: url(../img/arrow-mobile.png) no-repeat center;
+        top: auto;
+        bottom: -69px;
+        margin-top: 0; } }
   .clients__item {
     padding: 0 15px; }
     .clients__item a {
@@ -1207,10 +1262,6 @@ textarea {
       border-radius: 4px;
       margin: 0 auto;
       margin-top: 19px; }
-      @media only screen and (max-width: 992px) {
-        .clients__item a {
-          width: 291px;
-          height: 291px; } }
     .clients__item img {
       display: block; }
   .clients .slick-dots {
@@ -1317,15 +1368,24 @@ textarea {
       @media only screen and (max-width: 1200px) {
         .prof .slick-arrow.slick-next {
           right: -20px; } }
+      @media only screen and (max-width: 992px) {
+        .prof .slick-arrow.slick-next {
+          right: 0px; } }
     .prof .slick-arrow.slick-prev {
       left: -60px; }
       @media only screen and (max-width: 1200px) {
         .prof .slick-arrow.slick-prev {
           left: -20px; } }
+      @media only screen and (max-width: 992px) {
+        .prof .slick-arrow.slick-prev {
+          left: 0px; } }
     @media only screen and (max-width: 992px) {
       .prof .slick-arrow {
-        display: none;
-        opacity: 0; } }
+        opacity: 1;
+        background: url(../img/arrow-mobile.png) no-repeat center;
+        top: auto;
+        bottom: -60px;
+        margin-top: 0; } }
 
 .cite {
   padding-top: 90px; }
