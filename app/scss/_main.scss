@@ -1355,7 +1355,7 @@
 	text-align: center;
 	z-index: 10000;
 	@include mq($max-width: 992px) {
-		opacity: 0;
+		//opacity: 0;
 	}
 }
 /*----------end footer----------*/

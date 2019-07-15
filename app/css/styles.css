@@ -1591,9 +1591,6 @@ textarea {
   background-color: #ffffff;
   text-align: center;
   z-index: 10000; }
-  @media only screen and (max-width: 992px) {
-    .close-modal {
-      opacity: 0; } }
 
 /*----------end footer----------*/
 /* Morph Shape */
